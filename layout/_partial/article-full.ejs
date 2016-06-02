@@ -1,0 +1,50 @@
+<!-- Back Home -->
+<%- partial('_partial/backhome') %>
+
+<!-- Page Header -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1><%- item.title || theme.default_post_title || "Untitled" %></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <%- item.content %>
+ 
+                <!-- Meta -->
+                <div class="post-meta">
+                    <hr>
+                    <br>
+                    <div class="post-tags">
+                        <% if (item.tags && item.tags.length){ %>
+                            <%- partial('article-tags', {item: item}) %>
+                        <% } else if (item.categories && item.categories.length) { %>
+                            <%- partial('article-categories', {item: item}) %>
+                        <% } %>
+                    </div>
+                    <div class="post-date">
+                        <%= item.date.format(config.year_format) %> 年
+                        <%= item.date.format(config.month_format) %> 月
+                        <%= item.date.format(config.day_format) %> 日
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <%- partial("_partial/comment.ejs") %>
+            </div>
+        </div>
+    </div>
+</article>
