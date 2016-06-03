@@ -1,3 +1,4 @@
+<section class="article-container">
 <!-- Back Home -->
 <%- partial('_partial/backhome') %>
 
@@ -34,9 +35,7 @@
                         <% } %>
                     </div>
                     <div class="post-date">
-                        <%= item.date.format(config.year_format) %> 年
-                        <%= item.date.format(config.month_format) %> 月
-                        <%= item.date.format(config.day_format) %> 日
+                        <%- item.date.format(theme.date_format) %>
                     </div>
                 </div>
             </div>
@@ -48,3 +47,4 @@
         </div>
     </div>
 </article>
+</section>

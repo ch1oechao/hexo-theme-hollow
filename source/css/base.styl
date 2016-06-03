@@ -4,7 +4,6 @@
 body,
 html
   width 100%
-  height 100%
   font-size 18px
   color gray-dark
   @extend .serif
@@ -54,7 +53,10 @@ nav
   @extend .serif
 
 .intro 
-  margin: 100px auto
+  width 100%
+  height 100%
+  position relative
+  margin: 80px auto 0
   
 .intro-header
   background-color transparent
@@ -168,9 +170,9 @@ nav
 .archive-before-pagination
   height 50px
   
-.comment 
+.comment
   margin 20px 0 100px
-  
+
 footer
   padding 50px 0 65px
   color white-faded
@@ -243,9 +245,14 @@ form .row:first-child .floating-label-form-group
     border 1px solid brand-primary
     color white
 
-.pager
+.pagiantion
+  display block
+  padding 55px 0
   margin 0
+  text-align center
+  list-style none
   li
+    display inline
     > a, > span
       @extend .serif
       text-transform uppercase
@@ -257,6 +264,7 @@ form .row:first-child .floating-label-form-group
       border none
       border-radius none
     > a:hover, > a:focus
+      text-decoration none
       color red
       background-color transparent
   .disabled
