@@ -23,7 +23,7 @@
 
 在你的 Hexo 博客仓库下 clone 主题
 
-	git clone git@github.com:zchen9/hexo-theme-hollow.git themes/hollow
+	git clone https://github.com/zchen9/hexo-theme-hollow.git themes/hollow
 	
 在博客下的 _config.yml 文件修改主题为 hollow
 	
