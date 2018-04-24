@@ -7,16 +7,15 @@
 
 - 主页
 
-![](http://7xic0o.com1.z0.glb.clouddn.com/hexo-theme-hollow-01.png)
+<img src="http://7xic0o.com1.z0.glb.clouddn.com/hexo-theme-hollow-01.png" width="420"/>
 
 - 文章
 
-![](http://7xic0o.com1.z0.glb.clouddn.com/hexo-theme-hollow-02.png)
+<img src="http://7xic0o.com1.z0.glb.clouddn.com/hexo-theme-hollow-02.png" width="420"/>
 
 - 分类
 
-![](http://7xic0o.com1.z0.glb.clouddn.com/hexo-theme-hollow-03.png)
-
+<img src="http://7xic0o.com1.z0.glb.clouddn.com/hexo-theme-hollow-03.png" width="420"/>
 
 
 ## 安装
@@ -39,7 +38,6 @@
 
 	hexo deploy
 	
-	
 ## 配置
 
 主题下的 _config.yml 文件
@@ -60,6 +58,25 @@
 	# Google Analytics Tracking ID
 	google_analytics: 
 	 
+## 文章格式
+
+以下为 markdown 格式：
+
+```
+title: <文章标题>
+category: <文章分类>
+date: <文章日期> [YYYY-MM-DD]
+
+---
+
+文章预览内容
+
+<!--more-->
+
+文章正文在此
+
+```
+
 	
 ## 问题
 
