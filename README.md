@@ -2,22 +2,6 @@
 
 一款极致简洁的博客主题 😉 可访问[我的博客](http://www.chen9.info/fragment/)查看实际效果
 
-
-## 界面
-
-- 主页
-
-<img src="http://7xic0o.com1.z0.glb.clouddn.com/hexo-theme-hollow-01.png" width="420"/>
-
-- 文章
-
-<img src="http://7xic0o.com1.z0.glb.clouddn.com/hexo-theme-hollow-02.png" width="420"/>
-
-- 分类
-
-<img src="http://7xic0o.com1.z0.glb.clouddn.com/hexo-theme-hollow-03.png" width="420"/>
-
-
 ## 安装
 
 在你的 Hexo 博客仓库下 clone 主题
@@ -80,8 +64,9 @@ date: <文章日期> [YYYY-MM-DD]
 	
 ## 问题
 
-有什么好的建议或者发现BUG 欢迎提 [issue](https://github.com/zchen9/hexo-theme-hollow/issues) 和我讨论 🙋🏻
-
+- 此主题不适用写技术博客贴代码
+- 作者很懒，已经很久没更新了 ╮(╯_╰)╭
+- 欢迎贡献你的代码 🙋 [issue](https://github.com/zchen9/hexo-theme-hollow/issues)
 
 ## LICENSE
 
