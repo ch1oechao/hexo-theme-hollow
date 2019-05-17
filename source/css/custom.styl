@@ -23,3 +23,30 @@ td {
     border: none;
     border-left: 1px solid #fff;
 }
+
+// 搜索样式
+a.nav-search {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    color: white-faded;
+    z-index: 99;
+
+     &:hover, &:focus {
+        color: red;
+    }
+}
+
+.search-keyword {
+    color: red;
+    font-size: 12px;
+}
+
+.search-result {
+    overflow:hidden;
+    font-size: 12px;
+}
+
+a.nav-back {
+    position: fixed;
+}
