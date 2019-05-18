@@ -1,0 +1,28 @@
+<% if (theme.image_viewer){ %>
+    <!-- Custom picture view-->
+    <link href="<%= config.root %>css/viewer.min.css" rel="stylesheet" />
+    <script
+      src="<%= config.root %>js/viewer.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    
+    <script type="text/javascript">
+      // set image viewer
+      Viewer.setDefaults({
+        zoomRatio: [0.5],
+        navbar: false,
+        toolbar: false,
+        button: false,
+        title: [2, (image, imageData) => `${image.alt}`],
+        show: function() {
+          this.viewer.zoomTo(0.5);
+        }
+      });
+      var imageList = document.getElementsByTagName("img");
+      Array.prototype.forEach.call(imageList, element => {
+        var viewer = new Viewer(element);
+      });
+    </script>
+<% } %>
+    

@@ -11,4 +11,13 @@ comments:
 
 # Google Analytics Tracking ID
 google_analytics: 
- 
+
+# Register service worker
+service_worker: false
+
+# Local search with atom.xml, dependency hexo-generator-feed plugin
+local_search: true
+
+# using viewer.js to view image
+# https://fengyuanchen.github.io/viewerjs/
+image_viewer: true
