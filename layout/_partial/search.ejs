@@ -134,7 +134,7 @@
       };
     
       // use atom.xml to search blog
-      searchFunc("/atom.xml", "local-search-input", "local-search-result");
+      searchFunc("<%- config.root %>atom.xml", "local-search-input", "local-search-result");
       $("#searchModalCenter").on("shown.bs.modal", function(e) {
         setTimeout(function() {
           $("#local-search-input").focus();
