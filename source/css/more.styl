@@ -1,8 +1,8 @@
 /*
- * 修改主题样式
- * @author fakeyanss
- * @homepage https://foreti.me
+ * @author fakeyanss, zchen9
  */
+
+@import "variables.styl"
 
 // gist embed
 .blob-num 
@@ -19,12 +19,49 @@ a.nav-search
     color red
 
 // search result
-.search-keyword 
-  color red
-  font-size 12px
-.search-result 
+.modal-dialog
+  margin 120px auto
+  @media only screen and (min-width: 1280px)
+    width 50%
+  @media only screen and (min-width: 1024px) and (max-width: 1280px)
+    width 75%
+
+.modal-content 
+  border none
+  border-radius 0
   overflow hidden
-  font-size 12px
+  box-shadow 2px 2px 22px gray
+
+.modal-body 
+  padding 0
+
+.form-control 
+  border none
+  outline none
+  caret-color red
+  box-shadow none
+  &:focus 
+    box-shadow none
+
+.search-result-title
+  font-size 18px
+
+.search-result-list 
+  padding 20px
+  margin 0 auto
+  list-style none
+  font-size 14px
+
+.search-keyword 
+  font-style normal
+  font-weight 500
+  color red
+
+.search-result 
+  margin 5px 0 20px
+  overflow hidden
+  line-height 1.6
+  color gray-dark
 
 // github table style
 th 

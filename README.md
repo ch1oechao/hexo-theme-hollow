@@ -7,7 +7,7 @@
 在你的 Hexo 博客仓库下 clone 主题
 
 	git clone https://github.com/zchen9/hexo-theme-hollow.git themes/hollow
-	
+
 在博客下的 _config.yml 文件修改主题为 hollow
 	
 	theme: hollow
@@ -61,11 +61,22 @@ date: <文章日期> [YYYY-MM-DD]
 
 ```
 
-	
-## 问题
+## CHANGELOG
+
+20190526 @zchen9
+- 主页开放小相机
+- 微调阅读样式
+- 优化搜索功能
+
+20190519 @fakeYanss [pull/36](https://github.com/zchen9/hexo-theme-hollow/pull/36)
+- 增加service worker
+- 本地搜索
+- 文章图片放大查看
+
+## 其他
 
 - 此主题不适用写技术博客贴代码
-- 作者很懒，已经很久没更新了 ╮(╯_╰)╭
+- 作者很懒，更新频率看心情 ╮(╯_╰)╭
 - 欢迎贡献你的代码 🙋 [issue](https://github.com/zchen9/hexo-theme-hollow/issues)
 
 ## LICENSE

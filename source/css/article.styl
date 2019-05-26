@@ -1,4 +1,5 @@
 @import "mixins.styl"
+@import "variables.styl"
 
 .article-container
   @extend .animation
@@ -9,15 +10,13 @@ article
       // Responsive Images
       img
         position relative
-        left 25%
         margin 30px auto
         max-width 55% !important
         height auto
         display inline-block
-        box-shadow 0 0 0 5px #FFF, 0 0 15px 0 #000
+        box-shadow 0 0 0 5px #FFF, 0 0 15px 0 gray-dark
       @media only screen and (max-width: 768px)
         img {
-          left 10%
           max-width 80% !important
         }
       // Video Containers
@@ -62,6 +61,10 @@ article
         font-size 1.5em
         &.left
           float left
+
+      ul
+        padding-left 36px
+        line-height 1.8
 
 figure.highlight
   background #eee
