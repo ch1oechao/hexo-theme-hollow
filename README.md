@@ -42,7 +42,27 @@
 	
 	# Google Analytics Tracking ID
 	google_analytics: 
-	 
+		
+	# Register service worker
+	service_worker: false
+
+	# Local search with atom.xml, dependency hexo-generator-feed plugin
+	# 本地搜索功能，需要安装 hexo-generator-feed 插件
+	local_search: true
+
+	# using viewer.js to view image
+	# https://fengyuanchen.github.io/viewerjs/
+	image_viewer: true
+
+	# using highlight.js to show the code
+	# https://highlightjs.org/
+	# 使用 highlight.js 显示代码块
+	# enable 控制开关, theme 控制主题, 主题可在 https://highlightjs.org/static/demo/ 选择
+	hljs:
+		enable: true
+		theme: xcode
+
+
 ## 文章格式
 
 以下为 markdown 格式：
@@ -64,6 +84,9 @@ date: <文章日期> [YYYY-MM-DD]
 
 ## CHANGELOG
 
+20201229 @timlzh
+- 增加highlight.js显示代码块, 可以愉快地贴代码啦
+
 20190526 @zchen9
 - 主页开放小相机
 - 微调阅读样式
@@ -76,7 +99,6 @@ date: <文章日期> [YYYY-MM-DD]
 
 ## 其他
 
-- 此主题不适用写技术博客贴代码
 - 作者很懒，更新频率看心情 ╮(╯_╰)╭
 - 欢迎贡献你的代码 🙋 [issue](https://github.com/zchen9/hexo-theme-hollow/issues)
 
