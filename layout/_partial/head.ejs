@@ -5,18 +5,19 @@
 
     <!--Description-->
     <% if (page.description){ %>
-        <meta name="description" content="<%= page.description %>">
+    <meta name="description" content="<%= page.description %>">
     <% } else if (config.description){ %>
-        <meta name="description" content="<%= config.description %>">
+    <meta name="description" content="<%= config.description %>">
     <% } else if (page.excerpt){ %>
-        <meta name="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
+    <meta name="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
     <% } else if (page.content){ %>
-        <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
+    <meta name="description"
+        content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
     <% } %>
 
     <!--Author-->
     <% if (config.author){ %>
-        <meta name="author" content="<%= config.author %>">
+    <meta name="author" content="<%= config.author %>">
     <% } %>
 
     <!-- Title -->
@@ -34,16 +35,38 @@
     %>
     <title><%= title.join(' | ') %></title>
 
+
+    <!-- Top Menu  -->
+    <div class="container">
+        <div class="row">
+            <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="top_menu">
+                    <% Object.keys(theme.menu).forEach(key => { %>
+                    <a href="<%=theme.menu[key]%>"><%=key%></a>
+                    <% }); %>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap Core CSS -->
     <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Valine -->
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    
     <!-- Custom CSS -->
     <%- css('css/style.css') %>
 
     <!-- Custom Fonts -->
     <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link
+        href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link
+        href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href='//cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css' rel='stylesheet' type='text/css'>
 
     <!-- jQuery -->
     <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
@@ -52,11 +75,11 @@
 
     <!-- Highlight -->
     <% if(theme.hljs.enable){ %>
-        <link rel="stylesheet"
+    <link rel="stylesheet"
         href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/<%=theme.hljs.theme%>.min.css">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
     <% } %>
-    
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

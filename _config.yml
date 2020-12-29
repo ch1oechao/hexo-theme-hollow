@@ -1,3 +1,9 @@
+# Top menu
+menu:
+  About: /about
+  Tags: /tags
+  Categories: /categories
+
 # Default post title
 default_post_title: Halo
 
@@ -27,3 +33,9 @@ image_viewer: true
 hljs:
   enable: true
   theme: xcode
+
+valine:
+  enable: true
+  appId: TmYjcXmXgcQplLtrfIJhjSjd-MdYXbMMI # leancloud application app id
+  appKey: kv7JWNaJa88n7AIFmD1oeAxd # leancloud application app key
+  placeholder:  
