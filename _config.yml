@@ -21,3 +21,9 @@ local_search: true
 # using viewer.js to view image
 # https://fengyuanchen.github.io/viewerjs/
 image_viewer: true
+
+# using highlight.js to show the code
+# https://highlightjs.org/
+hljs:
+  enable: true
+  theme: xcode
