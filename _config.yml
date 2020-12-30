@@ -1,8 +1,9 @@
 # Top menu
+# 顶端导航栏
 menu:
-  About: /about
-  Tags: /tags
-  Categories: /categories
+  # 关于我: /about
+  # Tags: /tags
+  # Categories: /categories
 
 # Default post title
 default_post_title: Halo
@@ -13,7 +14,19 @@ date_format: YYYY 年 MM 月 DD 日
 # Comment. 
 comments:
   # Disqus comment
-  disqus_shortname: 
+  # 使用 Disqus 作你的评论系统
+  disqus:
+    enable: false
+    disqus_shortname:
+  # Valine Comment
+  # You need to follow https://valine.js.org/quickstart.html to get an appID and an appKey
+  # 使用 Valine 作你的评论系统
+  # 你需要按照 https://valine.js.org/quickstart.html 的方法获得一个 appID 和一个 appKey
+  valine:
+    enable: true
+    appId: TmYjcXmXgcQplLtrfIJhjSjd-MdYXbMMI 
+    appKey: kv7JWNaJa88n7AIFmD1oeAxd 
+    placeholder:  # 评论框占位符(留空默认启用一言 api 获取)
 
 # Google Analytics Tracking ID
 google_analytics: 
@@ -33,9 +46,3 @@ image_viewer: true
 hljs:
   enable: true
   theme: xcode
-
-valine:
-  enable: true
-  appId: TmYjcXmXgcQplLtrfIJhjSjd-MdYXbMMI # leancloud application app id
-  appKey: kv7JWNaJa88n7AIFmD1oeAxd # leancloud application app key
-  placeholder:  

@@ -37,18 +37,20 @@
 
 
     <!-- Top Menu  -->
-    <div class="container">
-        <div class="row">
-            <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="top_menu">
-                    <% Object.keys(theme.menu).forEach(key => { %>
-                    <a href="<%=theme.menu[key]%>"><%=key%></a>
-                    <% }); %>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <% if(theme.menu){ %>
+      <div class="container">
+          <div class="row">
+              <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <div class="top_menu">
+                      <% Object.keys(theme.menu).forEach(key => { %>
+                      <a href="<%=theme.menu[key]%>"><%=key%></a>
+                      <% }); %>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <% } %> 
+    
     <!-- Bootstrap Core CSS -->
     <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
@@ -61,10 +63,10 @@
     <!-- Custom Fonts -->
     <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link
-        href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        href='//fonts.loli.net/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
         rel='stylesheet' type='text/css'>
     <link
-        href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        href='//fonts.loli.net/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
         rel='stylesheet' type='text/css'>
     <link href='//cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css' rel='stylesheet' type='text/css'>
 
