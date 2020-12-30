@@ -26,6 +26,7 @@
 
 主题下的 _config.yml 文件
 
+```
   # Top menu
   # 顶端导航栏
   menu:
@@ -80,6 +81,7 @@
   hljs:
     enable: true
     theme: xcode
+```
 
 ## 文章格式
 
