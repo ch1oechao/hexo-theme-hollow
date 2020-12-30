@@ -24,8 +24,8 @@ comments:
   # 你需要按照 https://valine.js.org/quickstart.html 的方法获得一个 appID 和一个 appKey
   valine:
     enable: true
-    appId: TmYjcXmXgcQplLtrfIJhjSjd-MdYXbMMI 
-    appKey: kv7JWNaJa88n7AIFmD1oeAxd 
+    appId: 
+    appKey: 
     placeholder:  # 评论框占位符(留空默认启用一言 api 获取)
 
 # Google Analytics Tracking ID
