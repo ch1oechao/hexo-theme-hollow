@@ -32,8 +32,9 @@
 	
 	# Date Format
 	# 文章时间戳格式
+	# 也可以在博客主体的 _config.yml 配置，优先取博客主体的时间配置
 	date_format: YYYY 年 MM 月 DD 日
-	
+
 	# Comment 
 	# 填写 disqus_shortname 即可使用 disqus
 	comments:
