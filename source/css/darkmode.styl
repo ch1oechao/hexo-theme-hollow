@@ -1,0 +1,45 @@
+@media (prefers-color-scheme: dark) {
+    // change color here
+    :root {
+        --bg-color: #1b1c1c;
+        --font-color: #c9c0b0;
+        --line-color: #3b3e3d;
+    }
+
+    // icon
+    .fa-camera-retro, .fa-search, .fa-puzzle-piece {
+        color: var(--font-color);
+    }
+
+    // post preview, title, article content...
+    body, .intro, .post-title, .post-preview a p, .post-heading h1 {
+        background: var(--bg-color);
+        color: var(--font-color);
+    }
+
+    // code block
+    figure.highlight {
+        background-color: var(--bg-color);
+        color: var(--font-color);
+        border-color: var(--line-color);
+        text-shadow: var(--bg-color) 0px 0px 1px;
+    }
+    figure.highlight table .line {
+        color: var(--font-color);
+    }
+
+    // code inline
+    code {
+        color: #df5874;
+        background-color: #2c171b;
+    }
+
+    // image opacity
+    article .container .row img {
+        opacity: .7;
+        transition: opacity .5s ease-in-out;
+    }
+    article .container .row img:hover {
+        opacity: 1;
+    }
+}
