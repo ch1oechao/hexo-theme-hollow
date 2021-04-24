@@ -29,6 +29,7 @@ a
   color red
   &:hover, &:focus
     color gray-dark
+    text-decoration none
   &:visited, &:link
     color red
 a img
@@ -113,6 +114,7 @@ nav
 .post-preview
   position relative
   padding 25px 0 35px
+  min-height 14em
   overflow hidden
   clear both
   @extend .animation
@@ -187,7 +189,7 @@ nav
   a
     text-transform uppercase
     color red
-    &:hover, &:visited, &:active
+    &:hover, &:visited, &:focus
       text-decoration none
 
 .archive-before-pagination

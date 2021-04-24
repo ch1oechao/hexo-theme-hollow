@@ -7,39 +7,47 @@
     clear: both
 }
 
-@media screen {
-    #article-toc-inner,.inner {
-        padding: 0 20px
-    }
-}
 #article-toc {
-    display: none;
-    float: right;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
     width: 16%;
-    margin-right: -220px;
-    opacity: .8
 }
-@media screen and (min-width:986px) {
+
+@media screen and (max-width:986px) {
     #article-toc {
-        display: block
+        display: none;
     }
 }
-#article-toc.fixed {
+
+#article-toc-inner {
+    width: 100%;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 220px;
-    padding-top: 55px;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.fixed #article-toc-inner {
-    position: fixed;
-    width: 220px;
-    top: 0;
-    bottom: 0;
-    padding-top: 10%;
+
+#article-toc-inner .toc {
+    font-size: 15px;
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
 }
-#article-toc-inner ol {
-    margin-left: -16px;
-    list-style: none;
-    font-size: 11px;
+
+#article-toc-inner .toc-item {
+    height: 2em;
+    line-height: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+#article-toc-inner .toc-link {
+    color: gray-dark;
+    font-weight: 700;
+    &:focus, &:hover {
+        color: red;
+        text-decoration: none;
+    }
 }

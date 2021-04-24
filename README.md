@@ -1,6 +1,6 @@
 # Hexo-theme-hollow
 
-一款极致简洁的博客主题 😉 可访问[我的博客](http://www.chen9.info/fragment/)查看实际效果
+一款极致简洁的博客主题，可访问 [My Fragment](https://www.chen9.info/fragment/) 查看效果
 
 ## 安装
 
@@ -42,6 +42,12 @@
 	
 	# Google Analytics Tracking ID
 	google_analytics: 
+
+	# Table of content
+	# 文章目录
+	toc:
+	  enable: true
+
 	 
 ## 文章格式
 
@@ -64,6 +70,14 @@ date: <文章日期> [YYYY-MM-DD]
 
 ## CHANGELOG
 
+20210424 @zchen9
+- 调整细节样式
+- 优化深色模式配色
+
+20210424 @fakeYanss [pull/44](https://github.com/zchen9/hexo-theme-hollow/pull/44)
+- 支持文章目录
+- 支持深色模式
+
 20190526 @zchen9
 - 主页开放小相机
 - 微调阅读样式
@@ -76,9 +90,7 @@ date: <文章日期> [YYYY-MM-DD]
 
 ## 其他
 
-- 此主题不适用写技术博客贴代码
-- 作者很懒，更新频率看心情 ╮(╯_╰)╭
-- 欢迎贡献你的代码 🙋 [issue](https://github.com/zchen9/hexo-theme-hollow/issues)
+- 作者很懒，更新频率看心情，欢迎贡献你的设计
 
 ## LICENSE
 

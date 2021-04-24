@@ -1,20 +1,86 @@
 @media (prefers-color-scheme: dark) {
     // change color here
     :root {
-        --bg-color: #1b1c1c;
-        --font-color: #c9c0b0;
-        --line-color: #3b3e3d;
+        --bg-color: #222831;
+        --font-color: #94a1b4;
+        --link-color: #a7dfe4;
+        --line-color: #161d27;
     }
 
-    // icon
-    .fa-camera-retro, .fa-search, .fa-puzzle-piece {
+    a {
+        .fa-camera-retro, .fa-search, .fa-puzzle-piece {
+            color: var(--font-color);
+        }
+        &:focus, &:hover {
+            .fa-camera-retro, .fa-search, .fa-puzzle-piece {
+                color: var(--link-color);
+            }
+        }
+    }
+
+
+    body {
         color: var(--font-color);
-    }
-
-    // post preview, title, article content...
-    body, .intro, .post-title, .post-preview a p, .post-heading h1 {
         background: var(--bg-color);
+    }
+
+    .modal-content {
         color: var(--font-color);
+        background: var(--bg-color);
+        border-bottom: 1px solid var(--font-color);
+        box-shadow: none;
+        .form-control {
+            color: var(--font-color);
+            background: var(--bg-color);
+            caret-color: var(--link-color);
+        }
+        .search-result-list {
+            .search-result-title {
+                color: var(--link-color);
+                &:focus, &:hover {
+                    color: var(--link-color);
+                }
+            }
+            .search-result {
+                color: var(--font-color);
+                .search-keyword {
+                    color: var(--link-color);
+                }
+            }
+        }
+    }
+
+    .post-heading h1,
+    .intro-header .site-heading h1 {
+        color: var(--font-color);
+    }
+
+    a,
+    p a,
+    .pagiantion li > a,
+    #article-toc-inner .toc-link {
+        color: var(--font-color);
+        text-decoration: none;
+        &:focus, &:hover,
+        &:visited, &:link {
+            color: var(--link-color);
+        }
+    }
+
+    .post-tags a {
+        color: var(--link-color);
+        &:focus, &:hover {
+            color: var(--link-color);
+        }
+    }
+
+    .post-preview a {
+        color: var(--font-color);
+        &:focus, &:hover {
+            .post-title {
+                color: var(--link-color);
+            }
+        }
     }
 
     // code block
@@ -30,11 +96,15 @@
 
     // code inline
     code {
-        color: #df5874;
-        background-color: #2c171b;
+        color: var(--font-color);
+        background-color: #273435;
     }
 
-    // image opacity
+    article .container .row blockquote {
+        color: var(--font-color);
+        background: var(--line-color);
+    }
+
     article .container .row img {
         opacity: .7;
         transition: opacity .5s ease-in-out;

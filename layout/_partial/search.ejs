@@ -94,8 +94,7 @@
                     "<li><a href='" +
                     data_url +
                     "' class='search-result-title'>" +
-                    data_title +
-                    "</a>";
+                    data_title;
                   var content = data.content.trim().replace(/<[^>]+>/g, "");
                   if (first_occur >= 0) {
                     // cut out 30 characters
@@ -123,7 +122,7 @@
     
                     str += '<p class="search-result">' + match_content + "...</p>";
                   }
-                  str += "</li>";
+                  str += "</a></li>";
                 }
               });
               str += "</ul>";
