@@ -5,50 +5,68 @@
 ## 安装
 
 在你的 Hexo 博客仓库下 clone 主题
-
+```
 	git clone https://github.com/zchen9/hexo-theme-hollow.git themes/hollow
-
+```
 在博客下的 _config.yml 文件修改主题为 hollow
-	
+```
 	theme: hollow
-
+```
 启动博客
-
+```
 	hexo clean
 	hexo generate
 	hexo server
-	
+```
 发布博客
-
+```
 	hexo deploy
-	
+```
 ## 配置
 
 主题下的 _config.yml 文件
+```
+# Default post title
+# 默认文章标题
+default_post_title: Halo
 
-	# Default post title
-	# 默认文章标题
-	default_post_title: Halo
-	
-	# Date Format
-	# 文章时间戳格式
-	# 也可以在博客主体的 _config.yml 配置，优先取博客主体的时间配置
-	date_format: YYYY 年 MM 月 DD 日
+#Date Format
+# 文章时间戳格式
+# 也可以在博客主体的 _config.yml 配置，优先取博客主体的时间配置
+date_format: YYYY 年 MM 月 DD 日
 
-	# Comment 
-	# 填写 disqus_shortname 即可使用 disqus
-	comments:
-	  disqus_shortname: 
-	
-	# Google Analytics Tracking ID
-	google_analytics: 
+# Comment. 
+comments:
+  # Disqus comment
+  # 填写 disqus_shortname 即可使用 disqus
+  disqus_shortname: 
 
-	# Table of content
-	# 文章目录
-	toc:
-	  enable: true
+# Google Analytics Tracking ID
+# 填写谷歌分析跟踪 ID，使用谷歌分析应用
+google_analytics: 
 
-	 
+# Register service worker
+# 使用 Service Workers
+service_worker: false
+
+# Local search with atom.xml, dependency hexo-generator-feed plugin
+# 主页搜索服务，依赖插件 hexo-generator-feed
+# 需要运行 npm install hexo-generator-feed --save 安装此插件
+local_search: true
+
+# using viewer.js to view image
+# https://fengyuanchen.github.io/viewerjs/
+# 使用 viewer.js 查看图片
+image_viewer: true
+
+# Table of content
+# Maybe support more toc style in future.
+# 文章目录
+# 也许在之后的更新中会支持更多目录样式
+toc:
+  enable: true
+```
+ 
 ## 文章格式
 
 以下为 markdown 格式：
