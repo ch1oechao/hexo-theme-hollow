@@ -6,21 +6,21 @@
 
 在你的 Hexo 博客仓库下 clone 主题
 ```
-	git clone https://github.com/zchen9/hexo-theme-hollow.git themes/hollow
+git clone https://github.com/zchen9/hexo-theme-hollow.git themes/hollow
 ```
 在博客下的 _config.yml 文件修改主题为 hollow
 ```
-	theme: hollow
+theme: hollow
 ```
 启动博客
 ```
-	hexo clean
-	hexo generate
-	hexo server
+hexo clean
+hexo generate
+hexo server
 ```
 发布博客
 ```
-	hexo deploy
+hexo deploy
 ```
 ## 配置
 
