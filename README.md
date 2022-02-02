@@ -35,15 +35,15 @@ default_post_title: Halo
 # 也可以在博客主体的 _config.yml 配置，优先取博客主体的时间配置
 date_format: YYYY 年 MM 月 DD 日
 
-# Comment. 
+# Comment.
 comments:
   # Disqus comment
   # 填写 disqus_shortname 即可使用 disqus
-  disqus_shortname: 
+  disqus_shortname:
 
 # Google Analytics Tracking ID
 # 填写谷歌分析跟踪 ID，使用谷歌分析应用
-google_analytics: 
+google_analytics:
 
 # Register service worker
 # 使用 Service Workers
@@ -66,7 +66,7 @@ image_viewer: true
 toc:
   enable: true
 ```
- 
+
 ## 文章格式
 
 以下为 markdown 格式：
@@ -87,6 +87,10 @@ date: <文章日期> [YYYY-MM-DD]
 ```
 
 ## CHANGELOG
+
+20220202 @zchen9
+- 调整 toc 样式
+- 修复 Bootstrap CDN 404 问题
 
 20210424 @zchen9
 - 调整细节样式
