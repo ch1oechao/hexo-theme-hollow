@@ -1,5 +1,5 @@
 # Camera icon for website
-baseurl:
+baseurl: https://www.chen9.info/
 
 # Default post title
 default_post_title: Halo
@@ -10,10 +10,10 @@ date_format: YYYY 年 MM 月 DD 日
 # Comment.
 comments:
   # Disqus comment
-  disqus_shortname:
+  disqus_shortname: niceshot
 
 # Google Analytics Tracking ID
-google_analytics:
+google_analytics: UA-67856447-1
 
 # Register service worker
 service_worker: false
