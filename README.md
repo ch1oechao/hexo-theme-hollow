@@ -25,7 +25,12 @@ hexo deploy
 ## 配置
 
 主题下的 _config.yml 文件
+
 ```
+# Camera icon for website
+# 填写 baseurl 开启主页小相机，也可以在博客根目录的 _config.yml 文件末尾添加
+baseurl:
+
 # Default post title
 # 默认文章标题
 default_post_title: Halo
@@ -91,6 +96,7 @@ date: <文章日期> [YYYY-MM-DD]
 20220202 @zchen9
 - 调整 toc 样式
 - 修复 Bootstrap CDN 404 问题
+- 更新小相机配置
 
 20210424 @zchen9
 - 调整细节样式

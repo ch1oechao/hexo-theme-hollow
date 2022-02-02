@@ -1,16 +1,19 @@
+# Camera icon for website
+baseurl:
+
 # Default post title
 default_post_title: Halo
 
 #Date Format
 date_format: YYYY 年 MM 月 DD 日
 
-# Comment. 
+# Comment.
 comments:
   # Disqus comment
-  disqus_shortname: 
+  disqus_shortname:
 
 # Google Analytics Tracking ID
-google_analytics: 
+google_analytics:
 
 # Register service worker
 service_worker: false

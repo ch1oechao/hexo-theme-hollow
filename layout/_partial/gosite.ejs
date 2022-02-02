@@ -1,5 +1,5 @@
-<% if (config.baseurl) { %>
-<a class="nav-back" href="<%- config.baseurl %>">
+<% if (config.baseurl || theme.baseurl) { %>
+<a class="nav-back" href="<%- config.baseurl || theme.baseurl %>">
     <i class="fa fa-camera-retro"></i>
 </a>
 <% } %>
