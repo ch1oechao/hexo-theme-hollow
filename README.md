@@ -27,6 +27,10 @@ hexo deploy
 主题下的 _config.yml 文件
 
 ```
+# Top menu
+menu:
+  # About: /about
+
 # Camera icon for website
 # 填写 baseurl 开启主页小相机，也可以在博客根目录的 _config.yml 文件末尾添加
 baseurl:
@@ -101,6 +105,7 @@ date: <文章日期> [YYYY-MM-DD]
 
 20231102 @timlzh
 - 增加highlight.js显示代码块, 可以愉快地贴代码啦
+- 增加顶部导航栏功能, 可以自定义导航栏了
 
 20220202 @zchen9
 - 调整 toc 样式
