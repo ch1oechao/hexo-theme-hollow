@@ -47,8 +47,14 @@ date_format: YYYY 年 MM 月 DD 日
 # Comment.
 comments:
   # Disqus comment
-  # 填写 disqus_shortname 即可使用 disqus
-  disqus_shortname:
+  disqus:
+    enable: false
+    disqus_shortname:
+  valine:
+    enable: true
+    appId: # leancloud application app id
+    appKey: # leancloud application app key
+    placeholder: random # Placeholder. Set to random string if you want to have random placeholders(一言api). 
 
 # Google Analytics Tracking ID
 # 填写谷歌分析跟踪 ID，使用谷歌分析应用
@@ -104,8 +110,9 @@ date: <文章日期> [YYYY-MM-DD]
 ## CHANGELOG
 
 20231102 @timlzh
-- 增加highlight.js显示代码块, 可以愉快地贴代码啦
-- 增加顶部导航栏功能, 可以自定义导航栏了
+- 增加highlight.js代码高亮
+- 增加顶部导航栏功能
+- 增加valine评论系统
 
 20220202 @zchen9
 - 调整 toc 样式
