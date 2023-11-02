@@ -70,6 +70,12 @@ image_viewer: true
 # 也许在之后的更新中会支持更多目录样式
 toc:
   enable: true
+
+# using highlight.js to show the code
+# https://highlightjs.org/
+hljs:
+  enable: true
+  theme: xcode
 ```
 
 ## 文章格式
@@ -92,6 +98,9 @@ date: <文章日期> [YYYY-MM-DD]
 ```
 
 ## CHANGELOG
+
+20231102 @timlzh
+- 增加highlight.js显示代码块, 可以愉快地贴代码啦
 
 20220202 @zchen9
 - 调整 toc 样式
