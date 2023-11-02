@@ -14,7 +14,14 @@ date_format: YYYY 年 MM 月 DD 日
 # Comment.
 comments:
   # Disqus comment
-  disqus_shortname:
+  disqus:
+    enable: false
+    disqus_shortname:
+  valine:
+    enable: true
+    appId: # leancloud application app id
+    appKey: # leancloud application app key
+    placeholder: random # Placeholder. Set to random string if you want to have random placeholders(一言api). 
 
 # Google Analytics Tracking ID
 google_analytics:
