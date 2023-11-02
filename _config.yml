@@ -29,3 +29,9 @@ image_viewer: true
 # Maybe support more toc style in future.
 toc:
   enable: true
+
+# using highlight.js to show the code
+# https://highlightjs.org/
+hljs:
+  enable: true
+  theme: xcode
