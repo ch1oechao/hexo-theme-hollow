@@ -1,115 +1,243 @@
-@media (prefers-color-scheme: dark) {
-    // change color here
-    :root {
-        --bg-color: #222831;
-        --font-color: #94a1b4;
-        --link-color: #a7dfe4;
-        --line-color: #161d27;
-    }
+// @media (prefers-color-scheme: dark) {
+//     // change color here
+//     :root {
+//         --bg-color: #222831;
+//         --font-color: #94a1b4;
+//         --link-color: #a7dfe4;
+//         --line-color: #161d27;
+//     }
 
-    a {
+//     a {
+//         .fa-camera-retro, .fa-search, .fa-puzzle-piece {
+//             color: var(--font-color);
+//         }
+//         &:focus, &:hover {
+//             .fa-camera-retro, .fa-search, .fa-puzzle-piece {
+//                 color: var(--link-color);
+//             }
+//         }
+//     }
+
+
+//     body, footer {
+//         color: var(--font-color);
+//         background: var(--bg-color);
+//     }
+
+//     .modal-content {
+//         color: var(--font-color);
+//         background: var(--bg-color);
+//         border-bottom: 1px solid var(--font-color);
+//         box-shadow: none;
+//         .form-control {
+//             color: var(--font-color);
+//             background: var(--bg-color);
+//             caret-color: var(--link-color);
+//         }
+//         .search-result-list {
+//             .search-result-title {
+//                 color: var(--link-color);
+//                 &:focus, &:hover {
+//                     color: var(--link-color);
+//                 }
+//             }
+//             .search-result {
+//                 color: var(--font-color);
+//                 .search-keyword {
+//                     color: var(--link-color);
+//                 }
+//             }
+//         }
+//     }
+
+//     .post-heading h1,
+//     .intro-header .site-heading h1 {
+//         color: var(--font-color);
+//     }
+
+//     a,
+//     p a,
+//     .pagiantion li > a,
+//     #article-toc-inner .toc-link {
+//         color: var(--font-color);
+//         text-decoration: none;
+//         &:focus, &:hover,
+//         &:visited, &:link {
+//             color: var(--link-color);
+//         }
+//     }
+
+//     .post-tags a {
+//         color: var(--link-color);
+//         &:focus, &:hover {
+//             color: var(--link-color);
+//         }
+//     }
+
+//     .post-preview a {
+//         color: var(--font-color);
+//         &:focus, &:hover {
+//             .post-title {
+//                 color: var(--link-color);
+//             }
+//         }
+//     }
+
+//     // code block
+//     figure.highlight {
+//         background-color: var(--bg-color);
+//         color: var(--font-color);
+//         border-color: var(--line-color);
+//         text-shadow: var(--bg-color) 0px 0px 1px;
+//     }
+//     figure.highlight table .line {
+//         color: var(--font-color);
+//     }
+
+//     // code inline
+//     code {
+//         color: var(--font-color);
+//         background-color: #273435;
+//     }
+
+//     article .container .row blockquote {
+//         color: var(--font-color);
+//         background: var(--line-color);
+//     }
+
+//     article .container .row img {
+//         opacity: .7;
+//         transition: opacity .5s ease-in-out;
+//     }
+//     article .container .row img:hover {
+//         opacity: 1;
+//     }
+// }
+
+// change color here
+:root {
+    --bg-color: #222831 !important;
+    --font-color: #94a1b4 !important;
+    --link-color: #a7dfe4 !important;
+    --line-color: #161d27 !important;
+}
+
+a {
+    .fa-camera-retro, .fa-search, .fa-puzzle-piece {
+        color: var(--font-color) !important;
+    }
+    &:focus, &:hover {
         .fa-camera-retro, .fa-search, .fa-puzzle-piece {
-            color: var(--font-color);
+            color: var(--link-color) !important;
         }
-        &:focus, &:hover {
-            .fa-camera-retro, .fa-search, .fa-puzzle-piece {
-                color: var(--link-color);
+    }
+}
+
+
+body, footer {
+    color: var(--font-color) !important;
+    background: var(--bg-color) !important;
+}
+
+.modal-content {
+    color: var(--font-color) !important;
+    background: var(--bg-color) !important;
+    box-shadow: none !important;
+    .modal-content{
+        border-top 1px solid var(--font-color) !important;    
+    }
+    .form-control {
+        color: var(--font-color) !important;
+        background: var(--bg-color) !important;
+        caret-color: var(--link-color) !important;
+    }
+    .search-result-list {
+        .search-result-title {
+            color: var(--link-color) !important;
+            &:focus, &:hover {
+                color: var(--link-color) !important;
+            }
+        }
+        .search-result {
+            color: var(--font-color) !important;
+            .search-keyword {
+                color: var(--link-color) !important;
             }
         }
     }
+}
 
+.post-heading h1,
+.intro-header .site-heading h1 {
+    color: var(--font-color) !important;
+}
 
-    body {
-        color: var(--font-color);
-        background: var(--bg-color);
+.post-heading .subheading,
+.intro-header .site-heading .subheading {
+    color: var(--font-color) !important;
+}
+
+a,
+p a,
+.pagiantion li > a,
+#article-toc-inner .toc-link {
+    color: var(--font-color) !important;
+    text-decoration: none !important;
+    &:focus, &:hover{
+        color: var(--link-color) !important;
     }
+}
 
-    .modal-content {
-        color: var(--font-color);
-        background: var(--bg-color);
-        border-bottom: 1px solid var(--font-color);
-        box-shadow: none;
-        .form-control {
-            color: var(--font-color);
-            background: var(--bg-color);
-            caret-color: var(--link-color);
-        }
-        .search-result-list {
-            .search-result-title {
-                color: var(--link-color);
-                &:focus, &:hover {
-                    color: var(--link-color);
-                }
-            }
-            .search-result {
-                color: var(--font-color);
-                .search-keyword {
-                    color: var(--link-color);
-                }
-            }
-        }
+.pagiantion .active span{
+    color: var(--link-color) !important;
+}
+
+.post-tags a {
+    color: var(--link-color) !important;
+    &:focus, &:hover {
+        color: var(--link-color) !important;
     }
+}
 
-    .post-heading h1,
-    .intro-header .site-heading h1 {
-        color: var(--font-color);
-    }
-
-    a,
-    p a,
-    .pagiantion li > a,
-    #article-toc-inner .toc-link {
-        color: var(--font-color);
-        text-decoration: none;
-        &:focus, &:hover,
-        &:visited, &:link {
-            color: var(--link-color);
+.post-preview a {
+    color: var(--font-color) !important;
+    &:focus, &:hover {
+        .post-title {
+            color: var(--link-color) !important;
         }
     }
+}
 
-    .post-tags a {
-        color: var(--link-color);
-        &:focus, &:hover {
-            color: var(--link-color);
-        }
-    }
+.post-preview blockquote p{
+    color: var(--font-color) !important;
+}
 
-    .post-preview a {
-        color: var(--font-color);
-        &:focus, &:hover {
-            .post-title {
-                color: var(--link-color);
-            }
-        }
-    }
+// code block
+figure.highlight {
+    background-color: var(--bg-color) !important;
+    color: var(--font-color) !important;
+    border-color: var(--line-color) !important;
+    text-shadow: var(--bg-color) 0px 0px 1px !important;
+}
+figure.highlight table .line {
+    color: var(--font-color) !important;
+}
 
-    // code block
-    figure.highlight {
-        background-color: var(--bg-color);
-        color: var(--font-color);
-        border-color: var(--line-color);
-        text-shadow: var(--bg-color) 0px 0px 1px;
-    }
-    figure.highlight table .line {
-        color: var(--font-color);
-    }
+// code inline
+code {
+    color: var(--font-color) !important;
+    background-color: #273435 !important;
+}
 
-    // code inline
-    code {
-        color: var(--font-color);
-        background-color: #273435;
-    }
+article .container .row blockquote {
+    color: var(--font-color) !important;
+    background: var(--line-color) !important;
+}
 
-    article .container .row blockquote {
-        color: var(--font-color);
-        background: var(--line-color);
-    }
-
-    article .container .row img {
-        opacity: .7;
-        transition: opacity .5s ease-in-out;
-    }
-    article .container .row img:hover {
-        opacity: 1;
-    }
+article .container .row img {
+    opacity: .7 !important;
+    transition: opacity .5s ease-in-out !important;
+}
+article .container .row img:hover {
+    opacity: 1 !important;
 }

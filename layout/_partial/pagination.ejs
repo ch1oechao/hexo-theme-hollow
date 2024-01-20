@@ -2,6 +2,35 @@
     <% if (page.prev){ %>
         <li class="previous"><a href="<%- config.root %><%- page.prev_link %>"><%- __('prev')%></a></li>
     <% } %>
+    <% var page_list = []; %>
+    <% if (page.total > 1){
+        var total = page.total;
+        var current = page.current;
+        if (total <= 5){
+            for (var i = 1; i <= total; i++){
+                page_list.push(i);
+            }
+        } else {
+            if (current < 3){
+                page_list = [1, 2, 3, '...', total];
+            } else if (current >= 3 && current < total - 2){
+                page_list = [1, '...', current - 1, current, current + 1, '...', total];
+            } else {
+                page_list = [1, '...', total - 2, total - 1, total];
+            }
+        }
+    } %>
+    <% page_list.forEach(function(item){ %>
+        <% if (item == '...'){ %>
+            <li class="disabled"><span>...</span></li>
+        <% } else { %>
+            <% if (item == page.current){ %>
+                <li class="active"><span><%- item %></span></li>
+            <% } else { %>
+                <li class="page-numbers"><a href="<%- config.root %><%- item == 1 ? '' : 'page/' + item %>"><%- item %></a></li>
+            <% } %>
+        <% } %>
+    <% }) %>
     <% if (page.next){ %>
         <li class="next"><a href="<%- config.root %><%- page.next_link %>"><%- __('next')%></a></li>
     <% } %>

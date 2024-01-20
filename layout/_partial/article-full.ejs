@@ -1,3 +1,10 @@
+<%
+    var title = item.title || theme.default_post_title || "Untitled";
+    var mainTitle = title.split(" | ")[0];
+    var subTitle = title.split(" | ")[1];
+%>
+
+
 <section class="article-container">
     <!-- Back Home -->
     <%- partial('_partial/backhome') %>
@@ -9,8 +16,12 @@
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <div class="post-heading">
                             <h1>
-                                <%- item.title || theme.default_post_title || "Untitled" %>
+                                <%- mainTitle %>
                             </h1>
+                            <div class="subheading">
+                                <%- subTitle %>
+                            </div>
+                            <hr>
                         </div>
                     </div>
                 </div>

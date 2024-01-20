@@ -27,6 +27,10 @@ hexo deploy
 主题下的 _config.yml 文件
 
 ```
+# Top menu
+menu:
+  # About: /about
+
 # Camera icon for website
 # 填写 baseurl 开启主页小相机，也可以在博客根目录的 _config.yml 文件末尾添加
 baseurl:
@@ -43,8 +47,14 @@ date_format: YYYY 年 MM 月 DD 日
 # Comment.
 comments:
   # Disqus comment
-  # 填写 disqus_shortname 即可使用 disqus
-  disqus_shortname:
+  disqus:
+    enable: false
+    disqus_shortname:
+  valine:
+    enable: true
+    appId: # leancloud application app id
+    appKey: # leancloud application app key
+    placeholder: random # Placeholder. Set to random string if you want to have random placeholders(一言api). 
 
 # Google Analytics Tracking ID
 # 填写谷歌分析跟踪 ID，使用谷歌分析应用
@@ -70,6 +80,12 @@ image_viewer: true
 # 也许在之后的更新中会支持更多目录样式
 toc:
   enable: true
+
+# using highlight.js to show the code
+# https://highlightjs.org/
+hljs:
+  enable: true
+  theme: xcode
 ```
 
 ## 文章格式
@@ -92,6 +108,16 @@ date: <文章日期> [YYYY-MM-DD]
 ```
 
 ## CHANGELOG
+
+20240121 @timlzh
+- 增加暗黑模式开关
+- 页脚以及备案信息显示
+- Tags/Categories页面生成
+
+20231102 @timlzh
+- 增加highlight.js代码高亮
+- 增加顶部导航栏功能
+- 增加valine评论系统
 
 20220202 @zchen9
 - 调整 toc 样式

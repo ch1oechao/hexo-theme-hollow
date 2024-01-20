@@ -65,9 +65,21 @@ article
       ul
         padding-left 36px
         line-height 1.8
-
+  h1::before
+    content "#"
+  h2::before
+    content "##"
+  h3::before
+    content "###"
+  h4::before
+    content "####"
+  h5::before
+    content "#####"
+  h1::before, h2::before, h3::before, h4::before, h5::before
+    color color-meta
+    font-family font-mono
+    margin-right 10px
 figure.highlight
-  background #eee
   border 1px solid color-border
   margin-top 15px
   padding 7px 15px
