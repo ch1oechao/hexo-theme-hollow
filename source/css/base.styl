@@ -2,7 +2,8 @@
 @import "mixins.styl"
 
 body,
-html
+html,
+footer
   width 100%
   font-size 18px
   color gray-dark
@@ -98,12 +99,13 @@ nav
     h1
       font-size 35px
     .subheading
+      color white-faded
       line-height 1.1
       display block
       @extend .serif
       font-size 24px
       margin 10px 0 30px
-      font-weight 600
+      font-weight 300
 
     @media only screen and (min-width: 768px)
       h1
@@ -120,11 +122,18 @@ nav
   @extend .animation
   &.archive
     padding 12px 0
-  p
+  p, h1, h2
     margin-left 36%
     padding-left .6em
     font-size 1.1em
     line-height 1.5
+    display -webkit-box
+    -webkit-line-clamp 4
+    -webkit-box-orient vertical
+    overflow hidden
+    font-weight 300
+  code 
+    background: rgba(0,0,0,0)
   blockquote
     margin-left 36%
     padding .7em
@@ -132,6 +141,7 @@ nav
     border none
     font-size 1em
     p 
+      color gray-dark
       margin 0
       padding 0
   > a
@@ -146,17 +156,25 @@ nav
       float left
       width 32%
       height 100%
-      font-size 2em
-      margin 21px 0
-      word-wrap break-word
-      overflow hidden
-      text-overflow ellipsis
-      display -webkit-box
-      -webkit-line-clamp 2
-      -webkit-box-orient vertical
+      margin 21px 0      
+      > .post-maintitle
+        word-wrap break-word
+        overflow hidden
+        text-overflow ellipsis
+        display -webkit-box
+        -webkit-line-clamp 3
+        -webkit-box-orient vertical  
+        font-weight 800
+        font-size 2em   
+      > .post-subtitle
+        margin-top 10px
+        font-weight 300
+        font-size 1.3em
+        word-break break-word
       &.archive
         font-size 22px
         width 100%
+
 
   img 
     display: none
@@ -199,9 +217,9 @@ nav
   margin 20px 0 100px
 
 footer
-  padding 50px 0 65px
-  color white-faded
+  padding 50px 0 30px
   text-align center
+  opacity 0.5
 
 .floating-label-form-group
   font-size 14px
@@ -270,6 +288,12 @@ form .row:first-child .floating-label-form-group
     border 1px solid brand-primary
     color white
 
+[class^="tagcloud-"]
+    .count
+        font-size 0.5em
+        margin-left 0.1em
+        opacity 0.5
+
 .pagiantion
   display block
   padding 55px 0
@@ -295,7 +319,16 @@ form .row:first-child .floating-label-form-group
   .disabled
     > a, > a:hover, > a:focus, > span
       color gray
-      cursor not-allowed
+      cursor default
+  .active
+    > a, > a:hover, > a:focus, > span
+      color red
+      background-color transparent
+      cursor default
+  @media only screen and (max-width: 767px)
+    .disabled, .active, .page-numbers
+      display none !important
+    
 
 ::-moz-selection
   color white

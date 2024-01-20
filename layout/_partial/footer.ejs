@@ -1,0 +1,12 @@
+<% if (theme.footer && theme.footer.enable) { %>
+    <% if (theme.footer.content) { %>
+        <div class="content">
+            <%- theme.footer.content %>
+        </div>
+    <% } %>
+    <% if (theme.footer.beian) { %>
+        <div class="beian">
+            <a href="http://www.beian.miit.gov.cn" target="_blank"><%- theme.footer.beian %></a>
+        </div>
+    <% } %>
+<% } %>

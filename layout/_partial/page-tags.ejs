@@ -1,0 +1,38 @@
+<section class="article-container">
+    <!-- Back Home -->
+    <%- partial('_partial/backhome') %>
+
+        <!-- Page Header -->
+        <header class="intro-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="post-heading">
+                            <h1>
+                                <%- item.title %>
+                            </h1>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content -->
+        <article>
+            <div class="container">
+                <div class="row">
+                    <!-- Post Main Content -->
+                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <!-- <%- list_tags(site.tags, {orderby:1}) %> -->
+                        <%- tagcloud({orderby: 'count', order: 1, min_font: 0.8, max_font: 2, unit: 'em', amount: 40, show_count: true, class: 'tagcloud'}) %>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <%- partial("_partial/comment.ejs") %>
+                    </div>
+                </div>
+            </div>
+        </article>
+</section>

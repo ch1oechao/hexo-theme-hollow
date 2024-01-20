@@ -109,6 +109,11 @@ date: <文章日期> [YYYY-MM-DD]
 
 ## CHANGELOG
 
+20240121 @timlzh
+- 增加暗黑模式开关
+- 页脚以及备案信息显示
+- Tags/Categories页面生成
+
 20231102 @timlzh
 - 增加highlight.js代码高亮
 - 增加顶部导航栏功能

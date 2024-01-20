@@ -1,8 +1,21 @@
 <div class="post-preview">
     <a href="<%- config.root %><%- item.path %>">
-        <h2 class="post-title">
-            <%- item.title || theme.default_post_title || "Untitled" %>
-        </h2>
+        <div class="post-title">
+            <!-- <%- item.title || theme.default_post_title || "Untitled" %> -->
+            <%
+                var title = item.title || theme.default_post_title || "Untitled";
+                var mainTitle = title.split(" | ")[0];
+                var subTitle = title.split(" | ")[1];
+            %>
+            <div class="post-maintitle">
+                <%- mainTitle %>
+            </div>
+            <div class="post-subtitle">
+                <!-- <%- item.excerpt %> -->
+                <%- subTitle %>
+            </div>
+        </div>
+        
         <%- item.excerpt %>
     </a>
 </div>

@@ -1,6 +1,10 @@
 # Top menu
 menu:
-  # About: /about
+  # Tags: /tags
+  # Categories: /categories 
+
+# Site Icon
+favicon: 
 
 # Camera icon for website
 baseurl:
@@ -19,10 +23,10 @@ comments:
     disqus_shortname:
   valine:
     enable: true
-    appId: # leancloud application app id
-    appKey: # leancloud application app key
+    appId: appid
+    appKey: appkey
     placeholder: random # Placeholder. Set to random string if you want to have random placeholders(一言api). 
-
+    
 # Google Analytics Tracking ID
 google_analytics:
 
@@ -41,8 +45,13 @@ image_viewer: true
 toc:
   enable: true
 
+footer:
+  enable: true
+  beian: 浙ICP备2022036129号-2
+  # content: 本站采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 协议进行许可
+
 # using highlight.js to show the code
 # https://highlightjs.org/
 hljs:
   enable: true
-  theme: xcode
+  theme: atom-one-dark
