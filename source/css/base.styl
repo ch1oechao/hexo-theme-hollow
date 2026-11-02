@@ -315,5 +315,16 @@ img::-moz-selection
   color white
   background transparent
 
-body
-  webkit-tap-highlight-color brand-primary
+*,
+*:focus,
+*:active,
+*:focus-visible
+  outline none !important
+  -webkit-tap-highlight-color transparent
+
+a,
+button,
+input,
+[role="button"]
+  &::-moz-focus-inner
+    border 0
