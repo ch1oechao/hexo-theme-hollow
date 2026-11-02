@@ -1,6 +1,6 @@
 # Hexo-theme-hollow
 
-一款极致简洁的博客主题，可访问 [My Fragment](https://www.chen9.info/fragment/) 查看效果
+一款极致简洁的博客主题，可访问 [My Fragment](https://www.ch1oechao.me/fragment/) 查看效果
 
 ## 安装
 
