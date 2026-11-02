@@ -92,12 +92,12 @@ Post body goes here
 
 ### Changelog
 
-20220202 @zchen9
+20220202 @ch1oechao
 - Adjusted TOC styles
 - Fixed Bootstrap CDN 404 issue
 - Updated camera icon configuration
 
-20210424 @zchen9
+20210424 @ch1oechao
 - Polished style details
 - Improved dark mode colors
 
@@ -105,7 +105,7 @@ Post body goes here
 - Added table of contents
 - Added dark mode
 
-20190526 @zchen9
+20190526 @ch1oechao
 - Enabled the camera icon on the home page
 - Tweaked reading styles
 - Improved search
@@ -217,12 +217,12 @@ date: <文章日期> [YYYY-MM-DD]
 
 ### 更新日志
 
-20220202 @zchen9
+20220202 @ch1oechao
 - 调整 toc 样式
 - 修复 Bootstrap CDN 404 问题
 - 更新小相机配置
 
-20210424 @zchen9
+20210424 @ch1oechao
 - 调整细节样式
 - 优化深色模式配色
 
@@ -230,7 +230,7 @@ date: <文章日期> [YYYY-MM-DD]
 - 支持文章目录
 - 支持深色模式
 
-20190526 @zchen9
+20190526 @ch1oechao
 - 主页开放小相机
 - 微调阅读样式
 - 优化搜索功能
